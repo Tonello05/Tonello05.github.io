@@ -1,31 +1,24 @@
+body {
+	background-image: url("/img/paper.jpg");
+	background-repeat: repeat;
+}
+
+
 header {
-	background: url("/img/fabbrica_olivetti.jpg");
 	text-align: center;
 	width: 100%;
-	height: auto;
-	background-size:contain;
-	background-attachment: fixed;
-	position: relative;
-	overflow: hidden;
-	border-radius: 0 0 85% 85% / 30%;
 }
 header .overlay{
-	padding: 10px;
-  	background-image: linear-gradient( 135deg, #37306b95 10%, #66347F 50%, #9e4784a3 100%);
-  	font-family: 'Roboto', sans-serif;
+  	font-family: 'Museo Slab', sans-serif;
 }
 
 h1 {
-	text-shadow: 4px 4px #2d7b70;
-	color: #41b3a3;
-	font-size: 100px;
-	margin-bottom: 30px;
+	color: #568079;
+	font-size: 150px;
 }
 
 h3, p {
-	color: #41b3a3;
-	margin-bottom: 30px;
-	text-shadow: 2px 2px #2d7b70;
+	color: #568079;
 }
 
 h3 {
@@ -39,6 +32,7 @@ h3 {
 	/*	BUTTONS */
 
 .buttons {
+	font-family: 'Museo Slab', sans-serif;
 	padding-top: 20px;
 	text-align: center;
 	font-size: 30px; 
@@ -78,7 +72,7 @@ h3 {
 }
 
 button {
-	--c:  #229091; /* the color*/
+	--c:  #ACB38F; /* the color*/
 	
 	box-shadow: 0 0 0 .1em inset var(--c); 
 	--_g: linear-gradient(var(--c) 0 0) no-repeat;
@@ -100,3 +94,33 @@ button:active {
 	background-color: var(--c);
 	color: #fff;
   }
+
+  /* TESTO */
+
+.sezione {
+
+}
+
+.paragrafo p {
+	text-align: left;
+	margin-left: 5%;
+	margin-top: 10%;
+	margin-right: 10%;
+	font-family: 'Museo Slab', sans-serif;
+	font-size: 30px;
+	
+}
+
+img {
+	float: right;
+	width: 30%;
+  	height: auto;
+	margin-left: 20px;
+	border-radius: 10px;
+}
+
+hr {
+	width: 50%;
+	margin-left: 5%;
+	border-width: 4px;
+}
