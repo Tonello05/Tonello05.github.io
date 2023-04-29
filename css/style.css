@@ -14,7 +14,7 @@ header .overlay{
 
 h1 {
 	color: #568079;
-	font-size: 150px;
+	font-size:10vw
 }
 
 h3, p {
@@ -22,11 +22,11 @@ h3, p {
 }
 
 h3 {
-	font-size: 30px;
+	font-size:2vw
 }
 
 .sottotitolo {
-	font-size: 20px;
+	font-size:1vw
 }
 
 	/*	BUTTONS */
@@ -35,7 +35,7 @@ h3 {
 	font-family: 'Museo Slab', sans-serif;
 	padding-top: 20px;
 	text-align: center;
-	font-size: 30px; 
+	font-size:2vw
 }
 .btn_Storia {
 	
@@ -107,7 +107,7 @@ button:active {
 	margin-top: 10%;
 	margin-right: 10%;
 	font-family: 'Museo Slab', sans-serif;
-	font-size: 30px;
+	font-size:2vw
 	
 }
 
