@@ -98,7 +98,6 @@ button:active {
   /* TITOLO TESTI*/
 
 .par_title {
-
 	text-align: left;
 	margin-top: 5%;
 	margin-right: 10%;
@@ -123,6 +122,7 @@ button:active {
 
   /* TESTO */
 .paragrafo p {
+
 	text-align: left;
 	margin-left: 5%;
 	margin-top: 10%;
@@ -130,6 +130,10 @@ button:active {
 	font-family: 'Museo Slab', sans-serif;
 	font-size:2vw
 	
+}
+
+.animate {
+	animation: zoom 2s;
 }
 
 img {
@@ -144,4 +148,15 @@ hr {
 	width: 50%;
 	margin-left: 5%;
 	border-width: 4px;
+}
+
+@keyframes zoom {
+	
+	0% {
+		transform: scale(0.01);
+	}
+	100%{
+		transform: scale(1);
+	}
+
 }
