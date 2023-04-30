@@ -11,25 +11,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/museo-slab" rel="stylesheet">
+    <script src="/js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    <!-- INTESTAZIONE -->
     <header>
         <div class="overlay">
-    <h1>IVREA</h1>
+    <h1 id = "title">IVREA</h1>
     <h3>La visione di Camillo Olivetti</h3>
     <p class = "sottotitolo">una città che è stata la culla dell'informatica italiana</p>
         </div>
     </header>
+    <!-- BOTTONI -->
     <div class = "buttons">
-        <button class = "btn_Storia">La Storia</button>
-        <button class = "btn_nascita">La nascità dell'Olivetti</button>
-        <button class = "btn_olivetti">L'evoluzione dell'Olivetti</button>
-        <button class = "btn_arduino">ARDUINO</button>
+        <button class = "btn_Storia" onclick = "changeText(1)">La Storia</button>
+        <button class = "btn_nascita" onclick = "changeText(2)">La nascita dell'Olivetti</button>
+        <button class = "btn_olivetti" onclick = "changeText(3)">L'evoluzione dell'Olivetti</button>
+        <button class = "btn_arduino" onclick = "changeText(4)">ARDUINO</button>
     </div>
+    <!-- TITOLO PARAGRAFI -->
+    <div class = "par_title" id = "par_title">
+        <h2>
+            LA STORIA DI IVREA
+            <img src="/img/logo_ivrea.png" style = "transform: scale(0.5);"alt="">            
+        </h2>
+    </div>
+
+    <!-- PARAGRAFI -->
     <div id = "paragrafo" class="paragrafo">
         <div class="sezione">
-            <p>
+            <p id = "par1">
                 <img src="/img/ivrea_romana.jpg" alt="">
                 Ivrea è una città situata nella regione del Piemonte, nel nord Italia. 
                 La sua storia risale all'epoca romana, quando la città era una stazione 
@@ -40,7 +52,7 @@
             <hr>
         </div>
         <div class="sezione">
-            <p>
+            <p id = "par2">
                 <img src="/img/napoleone.jpg" alt="">
                 Durante il medioevo, Ivrea fu governata da una serie di signori locali,
                 tra cui i conti di Savoia.
@@ -50,7 +62,7 @@
             <hr>
         </div>
         <div class="sezione">
-            <p>
+            <p id = "par3">
                 <img src="/img/olivetti_fabbrica.jpg" alt="">
                 Nel XX secolo, Ivrea è diventata nota per essere la sede della famosa azienda di
                 tecnologia Olivetti. <br> La società, fondata nel 1908,
@@ -62,7 +74,7 @@
             <hr>
         </div>
         <div class="sezione">
-            <p>
+            <p id = "par4">
                 <img src="/img/ivrea_oggi.jpg" alt="">
                 Oggi, Ivrea è una città industriale con una popolazione di circa 25.000 abitanti.
                 La città è famosa per la sua battaglia delle arance, una festa che si tiene ogni

@@ -95,6 +95,32 @@ button:active {
 	color: #fff;
   }
 
+  /* TITOLO TESTI*/
+
+.par_title {
+
+	text-align: left;
+	margin-top: 5%;
+	margin-right: 10%;
+	margin-bottom: -10%;
+	margin-left: 5%;
+	font-family: 'Museo Slab', sans-serif;
+
+}
+
+.par_title h2 {
+	vertical-align: middle;
+	align-items:center;
+    justify-content:center;
+	display: flex;
+	font-size:5vw;
+	color: #568079;
+}
+
+.par_title img {
+	float: right;
+}
+
   /* TESTO */
 .paragrafo p {
 	text-align: left;
