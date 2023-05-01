@@ -174,10 +174,7 @@ hr {
 
 .conclusione p {
 	margin-left: 20vw;
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
-	background-image: url("/img/paper.jpg");
+	color: white;
 
 }
 
