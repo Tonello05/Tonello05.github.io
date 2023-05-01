@@ -166,21 +166,24 @@ hr {
 .conclusione {
 	margin-top: 10vw;
 	align-items: center;
-	color: #568079;
+
 	font-family: 'Museo Slab', sans-serif;
 	font-size: 2vw;
+	background-color: #568079;
 }
 
 .conclusione p {
-	margin-left: 40vw;
+	margin-left: 20vw;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: url("/img/paper.jpg");
+
 }
 
 .icon {
-	margin-top: 0.5vw;
-	margin-bottom: 2vw;
-	margin-left: -1vw;
-	margin-right: 40vw;
+	margin-right: 20vw;
 	float: right;
 	width: 2vw;
-
+	margin-top: 0.5vw;
 }
