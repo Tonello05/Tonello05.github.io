@@ -160,3 +160,27 @@ hr {
 	}
 
 }
+
+/*	FINE PAGINA */
+
+.conclusione {
+	margin-top: 10vw;
+	align-items: center;
+	color: #568079;
+	font-family: 'Museo Slab', sans-serif;
+	font-size: 2vw;
+}
+
+.conclusione p {
+	margin-left: 40vw;
+}
+
+.icon {
+	margin-top: 0.5vw;
+	margin-bottom: 2vw;
+	margin-left: -1vw;
+	margin-right: 40vw;
+	float: right;
+	width: 2vw;
+
+}
