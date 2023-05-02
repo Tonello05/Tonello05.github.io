@@ -3,6 +3,26 @@ body {
 	background-repeat: repeat;
 }
 
+.information_page {
+	margin-left: 18%;
+	border-left: 1vw solid #568079;
+}
+
+.lateral_bar {
+	margin-right: 82%;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	text-align: center;
+	font-family: 'Museo Slab', sans-serif;
+	position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.lateral_bar h4 {
+	font-size: 4vw;
+}
 
 header {
 	text-align: center;
@@ -29,20 +49,18 @@ h3 {
 	font-size:2vw
 }
 
+	/* BARRA LATERALE*/
+
 	/*	BUTTONS */
 
 .buttons {
 	font-family: 'Museo Slab', sans-serif;
 	padding-top: 20px;
 	text-align: center;
-	font-size:4vw;
-	position: sticky;
-    top: 0;
-    z-index: 999;
-	background-image: url(/img/paper.jpg);
+	font-size:2vw;
+	text-align: left;
 }
 .btn_Storia {
-	
 	cursor: pointer;
 	padding: .1em .6em;
 	font-weight: bold;  
