@@ -59,6 +59,7 @@ h3 {
 	text-align: center;
 	font-size:2vw;
 	text-align: left;
+	
 }
 .btn_Storia {
 	cursor: pointer;
@@ -67,6 +68,7 @@ h3 {
 	border: none;
 	color: black;
 	margin-bottom: 10px;
+	width: 18vw;
 }
 .btn_olivetti {
 	cursor: pointer;
@@ -91,6 +93,7 @@ h3 {
 	border: none;
 	color: black;
 	margin-bottom: 10px;
+	width: 18vw;
 }
 
 button {
