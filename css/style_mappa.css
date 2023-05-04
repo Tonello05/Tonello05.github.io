@@ -10,18 +10,65 @@ h1 {
     font-family: 'Museo Slab', sans-serif;
 }
 
-.btn_home {
-    position: absolute;
-    background-color:#568079;
-    border-color: #283b38;
-    color: white;
-    font-family: 'Museo Slab', sans-serif;
-    position: absolute;
-    top: 1%;
-    width: 10vw;
-    height: 4vw;
-    font-size: 1vw;
+.lateral_bar {
+	margin-right: 82%;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	text-align: center;
+	font-family: 'Museo Slab', sans-serif;
+	position: fixed;
+    top: 0;
+    left: 0;
 }
+
+.information_page {
+	margin-left: 18%;
+	border-left: 1vw solid #568079;
+}
+
+/* HOME BUTTON*/
+
+.btn_home {
+    margin-top: 20%;
+	cursor: pointer;
+	padding: .1em .6em;
+	font-weight: bold;  
+	border: none;
+	color: black;
+	margin-bottom: 10px;
+	width: 18vw;
+    font-family: 'Museo Slab', sans-serif;
+	padding-top: 20px;
+	text-align: center;
+	font-size:2vw;
+}
+
+.btn_home {
+	--c:  #ACB38F; 
+	
+	box-shadow: 0 0 0 .1em inset var(--c); 
+	--_g: linear-gradient(var(--c) 0 0) no-repeat;
+	background: 
+	  var(--_g) calc(var(--_p,0%) - 100%) 0%,
+	  var(--_g) calc(200% - var(--_p,0%)) 0%,
+	  var(--_g) calc(var(--_p,0%) - 100%) 100%,
+	  var(--_g) calc(200% - var(--_p,0%)) 100%;
+	background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+	outline-offset: .1em;
+	transition: background-size .8s, background-position 0s .8s;
+  }
+  .btn_home:hover {
+	--_p: 100%;
+	transition: background-position .4s, background-size 0s;
+  }
+  .btn_home:active {
+	box-shadow: 0 0 9e9q inset #0009; 
+	background-color: var(--c);
+	color: #fff;
+  }
+
+  /* MAP */
 
 .map img{
 
@@ -43,8 +90,48 @@ h1 {
     border-radius: 100%;
     height: auto;
     font-size: 1vw;
+    width: 2vw;
+    height: 2vw;
 }
 
+.map button:hover{
+    filter: saturate(5);
+}
+
+/* ANIMATIONS */
+
+.animate {
+	animation: zoom 2s;
+}
+
+.clicked {
+    animation: zoom_btn 1s;
+}
+
+@keyframes zoom_btn {
+	
+	0% {
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(259deg);
+    }
+	100%{
+        transform: rotate(0deg);
+    }
+
+}
+
+@keyframes zoom {
+	
+	0% {
+		transform: scale(0.01);
+	}
+	100%{
+		transform: scale(1);
+	}
+
+}
 
 /* BUTTON POSITIONS*/
 .btn_1 {
@@ -111,4 +198,66 @@ h1 {
 .btn_16 {
     top: 80.5%;
     left: 23.5%;
+}
+
+
+/* INFO */
+
+/* image */
+
+.info img {
+
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 5%;
+    float: left;
+    margin-right: 5%;
+    width: 30%;
+    height: auto;
+    
+}
+
+.info h2 {
+	vertical-align: middle;
+	align-items:center;
+    justify-content:center;
+	display: flex;
+	font-size:5vw;
+	color: #568079;
+    font-family: 'Museo Slab', sans-serif;
+    margin-left: 5%;
+
+}
+
+.info p {
+    margin-top: -3%;
+    text-align: left;
+	margin-left: 5%;
+	margin-right: 10%;
+	font-family: 'Museo Slab', sans-serif;
+	font-size:2vw;
+    color: #568079;
+}
+
+/* CONCLUSIONE */
+
+.conclusione {
+	margin-top: 10vw;
+	align-items: center;
+
+	font-family: 'Museo Slab', sans-serif;
+	font-size: 2vw;
+	background-color: #568079;
+}
+
+.conclusione p {
+	margin-left: 20vw;
+	color: white;
+}
+
+.icon {
+	margin-right: 20vw;
+	float: right;
+	width: 2vw;
+	margin-top: 0.5vw;
 }

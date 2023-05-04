@@ -66,5 +66,5 @@ function changeText(btnNum) {
 
             break;
     }
-
 }
+
