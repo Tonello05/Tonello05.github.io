@@ -1,0 +1,62 @@
+body {
+    background-image: url("/img/paper.jpg");
+    background-repeat: repeat;
+}
+
+h1 {
+    text-align: center;
+}
+
+.btn_home {
+
+    position: absolute;
+    top: 1%;
+}
+
+.map img{
+
+    width: 100%;
+    height: auto;
+
+}
+
+.map {
+    position: relative;
+}
+
+.map button {
+
+    background-color: aquamarine;
+
+}
+
+.btn_1 {
+
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+}
+.btn_2 {
+
+    position: absolute;
+    top: 28%;
+    left: 22%;
+
+}
+
+.btn_3 {
+
+    position: absolute;
+    top: 25%;
+    left: 26%;
+
+}
+
+.btn_4 {
+
+    position: absolute;
+    top: 31%;
+    left: 30%;
+
+}
