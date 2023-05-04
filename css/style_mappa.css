@@ -87,11 +87,13 @@ h1 {
     border-color: #283b38;
     color: white;
     font-family: 'Museo Slab', sans-serif;
-    border-radius: 100%;
     height: auto;
+    border-width: 0.1vw;
     font-size: 1vw;
-    width: 2vw;
-    height: 2vw;
+    display:block;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
 }
 
 .map button:hover{
