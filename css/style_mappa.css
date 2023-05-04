@@ -5,12 +5,22 @@ body {
 
 h1 {
     text-align: center;
+    color: #568079;
+	font-size:5vw;
+    font-family: 'Museo Slab', sans-serif;
 }
 
 .btn_home {
-
+    position: absolute;
+    background-color:#568079;
+    border-color: #283b38;
+    color: white;
+    font-family: 'Museo Slab', sans-serif;
     position: absolute;
     top: 1%;
+    width: 10vw;
+    height: 4vw;
+    font-size: 1vw;
 }
 
 .map img{
@@ -25,38 +35,80 @@ h1 {
 }
 
 .map button {
-
-    background-color: aquamarine;
-
+    position: absolute;
+    background-color:#568079;
+    border-color: #283b38;
+    color: white;
+    font-family: 'Museo Slab', sans-serif;
+    border-radius: 100%;
+    height: auto;
+    font-size: 1vw;
 }
 
-.btn_1 {
 
-    position: absolute;
+/* BUTTON POSITIONS*/
+.btn_1 {
     top: 10%;
     left: 10%;
-
 }
 .btn_2 {
-
-    position: absolute;
     top: 28%;
     left: 22%;
-
 }
-
 .btn_3 {
-
-    position: absolute;
     top: 25%;
     left: 26%;
-
 }
-
 .btn_4 {
-
-    position: absolute;
     top: 31%;
     left: 30%;
+}
+.btn_5 {
+    top: 31%;
+    left: 33%;
+}
+.btn_6 {
+    top: 30%;
+    left: 63%;
+}
+.btn_7 {
+    top: 38%;
+    left: 39%;
+}
+.btn_8 {
+    top: 41%;
+    left: 39%;
+}
+.btn_9 {
+    top: 40.5%;
+    left: 30.5%;
+}
+.btn_10 {
+    top: 38%;
+    left: 26%;
+}
+.btn_11 {
+    top: 50%;
+    left: 22%;
+}
+.btn_12 {
+    top: 48%;
+    left: 11%;
+}
+.btn_13 {
+    top: 63.5%;
+    left: 28%;
+}
+.btn_14 {
+    top: 57%;
+    left: 44%;
+}
 
+.btn_15 {
+    top: 73%;
+    left: 28%;
+}
+.btn_16 {
+    top: 80.5%;
+    left: 23.5%;
 }
