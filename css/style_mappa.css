@@ -22,6 +22,10 @@ h1 {
     left: 0;
 }
 
+.lateral_bar h4 {
+	font-size: 4vw;
+}
+
 .information_page {
 	margin-left: 18%;
 	border-left: 1vw solid #568079;
@@ -29,19 +33,20 @@ h1 {
 
 /* HOME BUTTON*/
 
+.buttons {
+	font-family: 'Museo Slab', sans-serif;
+	text-align: center;
+	font-size:2vw;
+}
+
 .btn_home {
-    margin-top: 20%;
 	cursor: pointer;
 	padding: .1em .6em;
 	font-weight: bold;  
 	border: none;
 	color: black;
 	margin-bottom: 10px;
-	width: 18vw;
-    font-family: 'Museo Slab', sans-serif;
-	padding-top: 20px;
-	text-align: center;
-	font-size:2vw;
+	width: 100%;
 }
 
 .btn_home {
