@@ -176,7 +176,8 @@ body{
     flex: 1;
     width: 50%;
     height: auto;
-    vertical-align:middle;
+    display: grid;
+    align-items: center;
     
 }
 
@@ -188,7 +189,7 @@ body{
 
 .classifica{
     height: 10vw;
-    width: 40vw;
+    width: 45vw;
     height: auto;
 
 }
