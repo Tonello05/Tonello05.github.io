@@ -39,7 +39,7 @@ body{
     display: flex; 
     flex-direction: row; 
     align-items: flex-start; 
-    font-size: 1vwpx;
+    font-size: 4vw;
     text-align: center;
 }
 
@@ -52,7 +52,7 @@ body{
     border: solid;
     box-shadow: 0.5vw 1vw black;
     
-    font-size: 1vw;
+    font-size: 2vw;
     transition: all .2s ease-in-out; 
 }
 
@@ -176,7 +176,8 @@ body{
     flex: 1;
     width: 50%;
     height: auto;
-
+    vertical-align:middle;
+    
 }
 
 .slideshow img{
@@ -187,7 +188,7 @@ body{
 
 .classifica{
     height: 10vw;
-    width: 40%;
+    width: 40vw;
     height: auto;
 
 }

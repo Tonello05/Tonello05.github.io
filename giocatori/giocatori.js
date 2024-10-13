@@ -18,7 +18,7 @@ const players = [
     { name: "Player 17", image: "toia", stats: "Goals: 6\nAssists: 9" },
     { name: "Player 18", image: "scara", stats: "Goals: 7\nAssists: 4" },
     { name: "Player 19", image: "kappa", stats: "Goals: 5\nAssists: 5" },
-    { name: "Player 20", image: "chris", stats: "Goals: 10\nAssists: 3" },
+    { name: "Player 20", image: "chri", stats: "Goals: 10\nAssists: 3" },
 ];
 
 function generatePlayerCards() {
