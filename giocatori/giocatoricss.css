@@ -1,0 +1,168 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+    font-style: bold;
+    background-color: rgb(225, 250, 248);
+}
+
+
+.title{
+    text-align: center;
+}
+.title img{
+    width: 80vw;
+    height: auto;
+}
+
+.p_our_players{
+    font-size: 3vw;
+}
+
+.div_team{
+    padding: 1%;
+    margin: 2%;
+    border-width: 0.5vw;
+    border-style: solid;
+    border-radius: 5vw;
+    box-shadow: 1vw 1vw gray;
+}
+
+.squad_logo{
+    width: 10vw;
+    height: auto;
+    float: right;
+}
+
+.squad_name{
+    font-size: 5vw;
+    display: inline;
+}
+
+.team_name_logo{
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.div_players_cards{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.player_img{
+    float: left;
+    width: 5vw;
+    height: auto;
+    border-radius: 1vw;
+    margin: 2%;
+}
+
+.player_card{
+    font-size: 1.5vw;
+    padding: 5%;
+    border-width: 0.2vw;
+    border-style: solid;
+    border-radius: 5vw;
+    margin: 1vw;
+    background-color: rgb(185, 208, 206);
+    box-shadow: 0.5vw 0.5vw gray;
+}
+
+.div_home a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    text-align: center;
+    padding: 1vw;
+    flex-grow: 1;
+    border-radius: 0vw;
+    border: solid;
+    box-shadow: 0.5vw 1vw black;
+    
+    font-size: 1.5vw;
+    transition: all .2s ease-in-out; 
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.teams {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team {
+    width: 23%; 
+}
+
+.players {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.card {
+    width: 150px; 
+    height: 200px; 
+    perspective: 1000px; 
+    margin-bottom: 1vw;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    margin: 0; 
+
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+}
+
+.card-front img {
+    width: 140%; 
+    height: auto; 
+}
+
+.card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007BFF;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 10px;
+    text-align: center; 
+}

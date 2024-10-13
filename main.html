@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="indexCss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giocherelloni League</title>
+    <link rel="icon" type="image/x-icon" href="Giocherelloni Web/img/throphy_no_bg.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--  IMPORTAZIONE FONT DA GOOGLE FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script>
+        // Function to get a cookie by name
+        function getCookie(name) {
+            return document.cookie.split('; ').reduce((r, c) => {
+                const [key, val] = c.split('=');
+                return key === name ? decodeURIComponent(val) : r;
+            }, '');
+        }
+
+        // Check if the user is authenticated
+        if (getCookie('authenticated') !== 'true') {
+            // Redirect to the password page if not authenticated
+            window.location.href = "index.html"; 
+        }
+    </script>
+
+</head>
+<body >
+
+    <div class="title">
+        <img src="Giocherelloni Web/img/titolo.png" alt="Giocherelloni">
+    </div>
+
+
+    <div class="div_logos"  >
+        <div class="squad_logo" style="padding-bottom: 25px;">
+            <a href="#"><img src="Giocherelloni Web/img/esaltati_no_bg.png" alt="Exalted Logo" ></a>
+        </div>
+        
+        <div class="squad_logo">
+            <a href="#"><img src="Giocherelloni Web/img/rettiliani_no_bg.png" alt="Rettiliani Logo"></a>
+        </div>
+        
+        <div class="squad_logo">
+            <a href="#"><img src="Giocherelloni Web/img/throphy_no_bg.png" alt="Giocherelloni League Logo"></a>
+        </div>
+        
+        <div class="squad_logo">
+            <a href="#"><img src="Giocherelloni Web/img/golden_balls_no_bg.png" alt="Golden Ball Logo"></a>
+        </div>
+        
+        <div class="squad_logo">
+            <a href="#"><img src="Giocherelloni Web/img/thepopes_no_bg.png" alt="The Popes Logo"></a>
+        </div>
+    </div>
+
+
+    <div class="div_menu"> <!--Qua il cursore quando passa sull'area occupata dal border, compare il border a fare da "pulsante"-->
+        
+        <!--<div class="div_menu_options">
+            <a href="storia/storia.html">Storia</a>
+        </div>-->
+
+        <div class="div_menu_options">   <!--Giocatori-->
+            <a href="giocatori/giocatori.html">I Giocherelloni</a>
+        </div>
+
+        <div class="div_menu_options">
+            <a href="regolamento/regolamento.html">Regolamento</a>
+        </div>
+        
+        <div class="div_menu_options">
+            <a href="news/news.html">News</a>
+        </div>
+        
+        <div class="div_menu_options">
+            <a href="classifica/classifica.html">Classifica</a>
+        </div>
+        <!--
+        <div class="div_menu_options">
+            <a href="#">Highlights</a>
+        </div>-->
+        
+        <div class="div_menu_options">
+            <a href="calendario/calendario.html">Calendario</a>
+        </div>
+        <!--
+        <div class="div_menu_options">
+            <a href="#">Statistiche</a>
+        </div>
+        
+        <div class="div_menu_options">
+            <a href="#">Partners</a>
+        </div>
+    -->
+    </div>
+
+    <div class="main_page">
+        
+        <div class="classifica">
+            <h1>Classifica</h1>
+            <div class="teams">
+                <div class="team" id="team-1">
+                    <h3 class="squadra">Esaltati</h3>
+                    <h3 class="punti">0</h3>
+                </div>
+                <div class="team" id="team-2">
+                    <h3 class="squadra">Golden Ball</h3>
+                    <h3 class="punti">0</h3>
+                </div>
+                <div class="team" id="team-3">
+                    <h3 class="squadra">Rettiliani</h3>
+                    <h3 class="punti">0</h3>
+                </div>
+                <div class="team" id="team-4">
+                    <h3 class="squadra">The Popes</h3>
+                    <h3 class="punti">0</h3>
+                </div>
+            </div>
+        </div>
+        <div class="slideshow">
+            <div class="w3-content w3-display-container">
+
+                <div class="w3-display-container mySlides">
+                  <img src="img_slideshow/giocherelloni.png" style="width:100%">
+                  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                    I giocherelloni
+                  </div>
+                </div>
+                
+                <div class="w3-display-container mySlides">
+                  <img src="img_slideshow/presentazione.png" style="width:100%">
+                  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                    La giocherelloni league
+                  </div>
+                </div>
+                
+                <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+                
+                </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="div_partners">
+        <p>I nostri partners</p>
+        <div class="div_partners_logo">
+            <img class="kfc" src="Giocherelloni Web/img/kfc_no_bg.png" alt="KFC">
+            <img class="ingegneria" src="Giocherelloni Web/img/ingegneriaItalia_no_bg.png" alt="Ingegneria Italia">
+            <img class="nasa" src="Giocherelloni Web/img/nasa_no_bg.png" alt="NASA">
+            <img class="trentino" src="Giocherelloni Web/img/trentinoTrasporti_no_bg.png" alt="TrentinoTrasporti">
+        </div>
+
+    </div>
+
+    <div class="div_copyright">
+        <p>
+            Copyright © 2024 Lega Internazionale Professionisti Giocherelloni League. All rights reserved 
+        </p>
+    </div>
+
+</body>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+</html>

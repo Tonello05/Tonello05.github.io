@@ -1,0 +1,198 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+    font-style: bold;
+    background-color: rgb(225, 250, 248);
+}
+
+.div_logos{
+    text-align: center;
+    display: flex; 
+    flex-direction: row; 
+    align-items: flex-start; 
+    padding-top: 1%;
+    width: auto;
+}
+
+.squad_logo{
+    flex-grow: 1;
+}
+
+.squad_logo img{
+
+    border-radius: 15%;
+    width: 10vw;
+    height: auto;
+
+}
+
+.title{
+    text-align: center;
+}
+.title img{
+    width: 80vw;
+    height: auto;
+}
+
+.div_menu{
+    width: 100%;
+    display: flex; 
+    flex-direction: row; 
+    align-items: flex-start; 
+    font-size: 1vwpx;
+    text-align: center;
+}
+
+.div_menu_options{
+    text-align: center;
+    padding: 1vw;
+    flex-grow: 1;
+    margin: 1vw;
+    border-radius: 0vw;
+    border: solid;
+    box-shadow: 0.5vw 1vw black;
+    
+    font-size: 1vw;
+    transition: all .2s ease-in-out; 
+}
+
+.div_menu_options a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.div_menu_options:hover{
+    transform: scale(1.2);
+    transform-origin: top;
+  }
+
+
+.div_partners{
+    text-align: center;
+    margin: 5%;
+    font-size: 2vw;
+    margin: 1vw;
+    border-radius: 0vw;
+    border: solid;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0.5;
+}
+
+.div_partners_logo{
+    text-align: center;
+    display: flex; 
+    flex-direction: row; 
+    align-items: flex-start; 
+    width: auto;
+    margin: 5%;
+    margin-top: 1%;
+}
+
+.div_partners_logo img{
+    width: 5vw;
+    height: auto;
+    flex-grow: 1;
+    margin: 5%;
+}
+
+.kfc{
+    padding-top: 2%;
+}
+.ingegneria{
+    scale: 0.7;
+}
+.nasa{
+    padding-top: 1%;
+}
+.trentino{
+    padding-top: 1%;
+}
+
+
+.div_copyright{
+    text-align: center;
+
+    
+}
+
+.div_copyright p{
+    padding-top: 1%;
+    margin: 1vw;
+    border-radius: 0vw;
+    border: solid;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0.5;
+}
+
+
+
+.team {
+    width: 70%;
+    margin-left: 20%;
+    border-style: solid;
+    border-width: 0.2vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.3s ease; 
+    border-radius: 1vw;
+    font-size: 2vw;
+    padding: 1vw;
+}
+
+#team-1{
+    background-color: gold;
+}
+#team-2{
+    background-color: silver;
+}
+#team-3{
+    background-color: brown;
+}
+
+.punti{
+    margin-left: auto; 
+}
+
+
+.team:hover {
+    background-color: #e0e0e0; 
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+}
+
+.main_page{
+    padding: 5%;
+    display: flex;
+
+}
+.slideshow{
+    height: 10vw;
+    flex: 1;
+    width: 50%;
+    height: auto;
+
+}
+
+.slideshow img{
+    border-width: 0.5vw;
+    border-radius: 2vw;
+    border-style: solid;
+}
+
+.classifica{
+    height: 10vw;
+    width: 40%;
+    height: auto;
+
+}
+
+.classifica h1{
+    text-align: center;
+    
+}
