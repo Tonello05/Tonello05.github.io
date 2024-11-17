@@ -165,4 +165,5 @@ h1 {
     transform: rotateY(180deg);
     padding: 10px;
     text-align: center; 
+    font-size: 2vw;
 }
