@@ -147,13 +147,20 @@ h1 {
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    width: 100%;
+    width: 100%; /* Full width of the card */
+    height: 100%; /* Full height of the card */
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+    box-sizing: border-box; /* Ensures border and padding are included in width/height */
+    
 }
 
 .card-front img {
-    width: 140%; 
-    height: auto; 
+    width: 100%; /* Fill the entire width */
+    height: 100%; /* Fill the entire height */
+    object-fit: cover; /* Ensures image covers the container without padding */
+    margin: 0; /* Remove any margin */
+    border-radius: 10px;
 }
 
 .card-back {
@@ -163,7 +170,11 @@ h1 {
     background-color: #007BFF;
     color: white;
     transform: rotateY(180deg);
-    padding: 10px;
-    text-align: center; 
+    padding: 0; /* Remove padding to match the image size */
+    width: 100%; /* Match the front card's width */
+    height: 100%; /* Adjust to match the image's height */
+    overflow: hidden; /* Ensure no overflow */
+    text-align: center;
     font-size: 2vw;
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
 }
