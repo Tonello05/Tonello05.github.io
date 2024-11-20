@@ -167,14 +167,18 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #007BFF;
-    color: white;
+    background-image: url("../img_giocherelloni_cards/card-bg-repeatable.png");
+    background-repeat: repeat;
+    color: rgb(0, 0, 0);
     transform: rotateY(180deg);
     padding: 0; /* Remove padding to match the image size */
     width: 100%; /* Match the front card's width */
     height: 100%; /* Adjust to match the image's height */
     overflow: hidden; /* Ensure no overflow */
     text-align: center;
-    font-size: 2vw;
+    font-size: 2.3vw;
     box-sizing: border-box; /* Ensure padding and border are included in width/height */
+    border-width: 0.5vw;
+    border-color: black;
+    border-style: solid;
 }
