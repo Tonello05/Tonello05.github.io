@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
+/* General Styles (already existing) */
+
+body{
+    background-image: url("../img/bg/Gradient.png");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    overflow: hidden;
+}
+
+.main-box{
+    margin: 1vw;
+    margin-bottom: 0;
+    border-width: 0.2vw;
+    border-style:solid;
+    height: 45vw;
+}
+
+.main-box h1{
+
+    margin: 0;
+    margin-left: 4vw;
+    margin-top: 2vw;
+    padding: 0;
+    font-size: 3vw;
+    font-family: Overpass Mono;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-box hr{
+    padding: 0;
+    margin-top: 0;
+    align-items: center;
+    width: 50%;
+    color: black;
+    border-bottom: 0.2vw solid #000;
+}
+
+.main-box h2{
+    font-family: Overpass Mono;
+    font-size: 2vw;
+    margin-left: 4vw;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.main-box h3{
+    margin-top: 0;
+    font-family: Overpass Mono;
+    font-size: 1vw;
+    margin-left: 4vw;
+    font-weight: 400;
+}
+
+.sections{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4vw;
+    width: fit-content;
+}
+
+.sections button{
+    font-family: 'Overpass Mono', monospace;
+    font-size: 2vw;
+    font-weight: 400;
+    background-color: transparent;
+    border: 0;
+    width:fit-content;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.5s ;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -ms-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+}
+
+.copyright{
+    font-size: 1vw;
+    font-family: 'Overpass Mono', monospace;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    margin-left: 3vw;
+}
+
+.sections button:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.loading_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Ensures the element remains responsive */
+    height: 100vh; /* Takes the full height of the viewport */
+}
+
+.loading_name{
+    font-family: Overpass Mono;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.loading_portfolio{
+    font-family: Overpass Mono;
+    font-weight: 800;
+    font-style: normal;
+    margin-left: 2vw;
+}
+
+.projects {
+    position: absolute;
+    top: 10vw; /* Adjust as needed */
+    right: 4vw; /* Pushes it to the right */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.projects a {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Aligns h4 and p to the same height */
+    text-decoration: none;
+    gap: 1vw; /* Adds spacing between p and h4 */
+    transition: all 0.5s;
+    margin-bottom: 2vw;
+}
+
+.projects h4 {
+    font-family: Overpass Mono;
+    font-weight: 800;
+    font-size: 4vw;
+    color: black;
+    margin: 0;
+    line-height: 1.2; /* Adjust to match p */
+}
+
+.projects p {
+    font-family: Overpass Mono;
+    font-weight: 600;
+    font-size: 1vw;
+    color: black;
+    margin: 0;
+    line-height: 1.2; /* Ensures it aligns with h4 */
+}
+
+.projects a:hover {
+    transform: scale(1.1);
+}
