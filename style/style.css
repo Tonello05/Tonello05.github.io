@@ -94,6 +94,10 @@ body {
     font-family: Overpass Mono, monospace;
 }
 
+.loading_name{
+    font-weight: 100;
+}
+
 .loading_portfolio {
     font-weight: 800;
     margin-left: 2vw;
