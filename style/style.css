@@ -71,11 +71,13 @@ body {
 }
 
 .copyright {
+    position: absolute;
+    bottom: 0;
+
     font-size: 1vw;
     font-family: Overpass Mono, monospace;
     margin-left: 3vw;
     margin-bottom: 1vw;
-    align-self: center;
 }
 
 .loading_title {
