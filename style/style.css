@@ -1,132 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
-/* General Styles (already existing) */
 
-body{
+/* General Styles */
+body {
     background-image: url("../img/bg/Gradient.png");
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
     overflow: hidden;
-}
-
-.main-box{
-    margin: 1vw;
-    margin-bottom: 0;
-    border-width: 0.2vw;
-    border-style:solid;
-    height: 45vw;
-}
-
-.main-box h1{
-
     margin: 0;
-    margin-left: 4vw;
-    margin-top: 2vw;
     padding: 0;
-    font-size: 3vw;
-    font-family: Overpass Mono;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.main-box hr{
-    padding: 0;
-    margin-top: 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 50%;
-    color: black;
-    border-bottom: 0.2vw solid #000;
 }
 
-.main-box h2{
-    font-family: Overpass Mono;
-    font-size: 2vw;
+.main-box {
+    margin: 2vw;
+    border-width: 0.2vw;
+    border-style: solid;
+    height: calc(100vh - 4vw);
+    width: calc(100vw - 4vw);
+    padding: 2vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main-box h1 {
+    margin: 0 0 0 4vw;
+    font-size: 3vw;
+    font-family: Overpass Mono, monospace;
+    font-weight: 400;
+}
+
+.main-box h2, .main-box h3 {
+    font-family: Overpass Mono, monospace;
     margin-left: 4vw;
     font-weight: 400;
+    margin-top: 0;
     margin-bottom: 0;
-    margin-top: 0;
 }
 
-.main-box h3{
-    margin-top: 0;
-    font-family: Overpass Mono;
-    font-size: 1vw;
-    margin-left: 4vw;
-    font-weight: 400;
-}
+.main-box h2 { font-size: 2vw; }
+.main-box h3 { font-size: 1vw; }
 
-.sections{
+.sections {
+    margin-top: 2vw;
     display: flex;
     flex-direction: column;
     margin-left: 4vw;
     width: fit-content;
 }
 
-.sections button{
-    font-family: 'Overpass Mono', monospace;
+.sections button {
+    font-family: Overpass Mono, monospace;
     font-size: 2vw;
-    font-weight: 400;
     background-color: transparent;
     border: 0;
-    width:fit-content;
     text-align: left;
     cursor: pointer;
-    transition: all 0.5s ;
-    -webkit-transition: all 0.5s ;
-    -moz-transition: all 0.5s ;
-    -ms-transition: all 0.5s ;
-    -o-transition: all 0.5s ;
+    transition: transform 0.5s;
 }
 
-.copyright{
-    font-size: 1vw;
-    font-family: 'Overpass Mono', monospace;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-    margin-left: 3vw;
-}
-
-.sections button:hover{
+.sections button:hover {
     transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
 }
 
-.loading_title{
-    display: flex;
-    flex-direction: row;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
+.copyright {
+    font-size: 1vw;
+    font-family: Overpass Mono, monospace;
+    margin-left: 3vw;
+    margin-bottom: 1vw;
+    align-self: center;
+}
 
+.loading_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%; /* Ensures the element remains responsive */
-    height: 100vh; /* Takes the full height of the viewport */
+    width: 100%;
+    height: 100vh;
 }
 
-.loading_name{
-    font-family: Overpass Mono;
-    font-weight: 400;
-    font-style: normal;
+.loading_name, .loading_portfolio {
+    font-family: Overpass Mono, monospace;
 }
 
-.loading_portfolio{
-    font-family: Overpass Mono;
+.loading_portfolio {
     font-weight: 800;
-    font-style: normal;
     margin-left: 2vw;
 }
 
 .projects {
     position: absolute;
-    top: 10vw; /* Adjust as needed */
-    right: 4vw; /* Pushes it to the right */
+    top: 10vw;
+    right: 5vw;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -134,32 +110,84 @@ body{
 
 .projects a {
     display: flex;
-    flex-direction: row;
-    align-items: center; /* Aligns h4 and p to the same height */
+    align-items: center;
     text-decoration: none;
-    gap: 1vw; /* Adds spacing between p and h4 */
-    transition: all 0.5s;
+    gap: 1vw;
+    transition: transform 0.5s;
     margin-bottom: 2vw;
 }
 
 .projects h4 {
-    font-family: Overpass Mono;
+    font-family: Overpass Mono, monospace;
     font-weight: 800;
     font-size: 4vw;
     color: black;
     margin: 0;
-    line-height: 1.2; /* Adjust to match p */
 }
 
 .projects p {
-    font-family: Overpass Mono;
+    font-family: Overpass Mono, monospace;
     font-weight: 600;
     font-size: 1vw;
     color: black;
     margin: 0;
-    line-height: 1.2; /* Ensures it aligns with h4 */
 }
 
 .projects a:hover {
     transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+    
+    html{
+        overflow: hidden;
+    }
+    
+    .main-box {
+        height: auto;
+        width: calc(100vw - 6vw);
+        margin: 5vw;
+        padding: 4vw;
+        box-sizing: border-box;
+        
+    }
+    
+    .main-box h1, .main-box h2, .main-box h3 {
+        font-size: 5vw;
+        margin-left: 5vw;
+    }
+    
+    .sections button {
+        font-size: 4vw;
+    }
+    
+    .copyright {
+        font-size: 3vw;
+        margin-left: 10vw;
+    }
+    
+    .loading_title {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .loading_name, .loading_portfolio {
+        font-size: 6vw;
+    }
+    
+    .projects {
+        position: static;
+        align-items: flex-end;
+        margin-right: 4vw;
+        margin-top: 10%;
+    }
+    
+    .projects h4 {
+        font-size: 6vw;
+    }
+    
+    .projects p {
+        font-size: 3vw;
+    }
 }
