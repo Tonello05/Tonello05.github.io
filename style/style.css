@@ -6,9 +6,9 @@ body {
     background-image: url("../img/bg/Gradient.png");
     height: 100vh;
     width: 100vw;
-    background-position: center;
+    background-position: top right; /* Align the image's top-right corner to the screen's top-right corner */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; /* Ensure the image covers the entire screen */
     overflow: hidden;
     margin: 0;
     padding: 0;
