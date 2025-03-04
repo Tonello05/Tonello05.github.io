@@ -32,10 +32,12 @@ body{
 .left-img, .right-img {
     display: flex;
     gap: 10px;
+    
 }
 
 /* Centered name */
 .navbar p {
+    text-shadow: 1px 1px 2px #838383;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -53,6 +55,7 @@ body{
 }
 
 .title h1{
+    text-shadow: 1px 1px 2px #838383;
     margin-top: 80px;
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
@@ -62,6 +65,7 @@ body{
 }
 
 .title h2{
+    text-shadow: 1px 1px 2px #838383;
     font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -71,11 +75,13 @@ body{
 }
 
 .buttons{
+
     margin-top: 100px;
     text-align: center;
 }
 
 .buttons button{
+    text-shadow: 1px 1px 2px #838383;
     flex-grow: 1; /* Allows it to center properly */
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
@@ -109,6 +115,7 @@ body{
     margin-left: 40px;
     margin-right: 40px;
     transition: transform 0.5s;
+    text-shadow: 1px 1px 2px #838383;
 }
 
 
@@ -119,13 +126,14 @@ body{
 .about-box{
     padding: 30px;
     margin: 80px;
-    background-color: rgb(228, 228, 228);
-    opacity: 90%;
+    background-color: rgb(237, 237, 237);
+    opacity: 95%;
     box-shadow: 5px 10px 20px #888888 ;
     border-radius: 20px;
 }
 
 .about-box h1{
+    text-shadow: 1px 1px 2px #838383;
     font-size: 60px;
     font-weight: bold;
     flex-grow: 1; /* Allows it to center properly */
@@ -135,6 +143,7 @@ body{
 }
 
 .about-box h2{
+    text-shadow: 1px 1px 2px #838383;
     font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -143,6 +152,7 @@ body{
 }
 
 .about-box h3{
+    text-shadow: 1px 1px 2px #838383;
     font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -154,9 +164,9 @@ body{
     z-index: 0;
     padding: 30px;
     margin: 80px;
-    background-color: rgb(228, 228, 228);
-    opacity: 90%;
-    box-shadow: 5px 10px 20px #888888 ;
+    background-color: rgb(237, 237, 237);
+    opacity: 95%;
+    box-shadow: 5px 10px 30px #888888 ;
     border-radius: 20px;
     width: 600px;
     text-decoration: none;
@@ -164,11 +174,14 @@ body{
 }
 
 .project img{
+    border-radius: 10px;
     width: 500px;
     height: auto;
+    box-shadow: 1px 1px 3px #838383;
 }
 
 .project h1{
+    text-shadow: 1px 1px 2px #838383;
     font-size: 60px;
     font-weight: bold;
     flex-grow: 1;
@@ -180,6 +193,7 @@ body{
 }
 
 .project h2{
+    text-shadow: 1px 1px 2px #838383;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
