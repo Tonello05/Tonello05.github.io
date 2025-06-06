@@ -375,5 +375,20 @@ iframe{
         margin: 5%;
     }
 
+    .bottom-left{
+        margin-bottom: 5%;
+        padding-bottom: 0;
+    }
+
+    .bottom-right {
+        margin-bottom: 5%;
+        padding-bottom: 0;
+    }
+
+    .social{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
 }
 
