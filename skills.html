@@ -3,63 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
     <title>Samuele Tonello</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mkm2czt.css">
+    <style>
+        @media (max-width: 600px) {
+            html, body {
+                overflow: scroll; /* disables scrolling */
+                height: 100%;     /* ensures full height */
+                margin: 0;
+                overflow: scroll;
+                scrollbar-color: rgb(37, 37, 37) rgb(0, 0, 0);
+            }
+        }
+    </style>
 </head>
+
 <body>
+    <video autoplay muted loop id="myVideo">
+        <source src="img/bg.mp4" type="video/mp4">
+    </video>
 
-    <div class="navbar">
-        <div class="left-img">
-            <a href="https://www.linkedin.com/in/samuele-tonello/" target="_blank">
-                <img src="img/linkedin.png" alt="LinkedIn" class="linkedin">
-            </a>
-            <a href="mailto:samueletonello05@gmail.com">
-                <img src="img/email.png" alt="Email" class="email">
-            </a>
+    <button class="lang-btn" onclick="toggleLanguage()">English</button>
+    <a class="home-button" href="index.html">HOME</a>
+
+    <div class="title-skill">
+        <h1 data-en="SKILLS" data-it="COMPETENZE">
+            SKILLS
+        </h1>
+    </div>
+
+    <div class="skill">
+        <div class="skill-section">
+            <h3>DESIGN</h3>
+            <div class="skill-item">
+                <img src="img/skills/design/illustrator.png" alt="illustrator">
+                <p>Illustrator</p>
+            </div>
+            <div class="skill-item">
+                <img src="img/skills/design/photoshop.png" alt="photoshop">
+                <p>Photoshop</p>
+            </div>
+            <div class="skill-item">
+                <img src="img/skills/design/figma.png" alt="figma">
+                <p>Figma</p>
+            </div>
+            <div class="skill-item">
+                <img src="img/skills/design/canva.png" alt="canva">
+                <p>Canva</p>
+            </div>
+
+        </div>
+        <div class="skill-section">
+            <h3 data-en="DEVELOPMENT" data-it="PROGRAMMAZIONE">DEVELOPMENT</h3>
+            <div class="skill-item">
+                <img src="img/skills/developing/html.png" alt="html5">
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <img src="img/skills/developing/php.png" alt="php">
+                <p>php, mySQL, SQL</p>
+            </div>
+            <div class="skill-item">
+                <img src="img/skills/developing/coding.png" alt="coding">
+                <p>Java, Python, Lua, C, C#</p>
+            </div>
+            <div class="skill-item">
+                <p>Android Studio, Arduino, Godot</p>
+            </div>
+
+        </div>
+        <div class="skill-section">
+            <h3 data-en="LANGUAGES" data-it="LINGUE">LANGUAGES</h3>
+            <div class="skill-item-lang" data-en="Italian" data-it="Italiano">
+                Italian
+            </div>
+            <div class="skill-item-lang" data-en="English" data-it="Inglese">
+                English
+            </div>
+
         </div>
 
-        <p>Samuele <br>Tonello</p>
-
-        <div class="right-img">
-            <a href="https://t.me/To0nny" target="_blank">
-                <img src="img/telegram.png" alt="Telegram" class="telegram">
-            </a>
-            <a href="https://github.com/Tonello05" target="_blank">
-                <img src="img/github.png" alt="GitHub" class="github">
-            </a>
-        </div>
     </div>
 
-    <a href="index.html" class="home-button"><button>Home</button></a>
-
-    <div class="title">
-        <h1>My skills</h1>
-    </div>
-
-    <div class="about-box">
-        <h1>Design</h1>
-        <h2>Photoshop, Illustrator, Figma, Canva</h2>
-    </div>
-
-    <div class="about-box">
-        <h1>Front End</h1>
-        <h2>HTML, CSS, JavaScript, Bootstrap</h2>
-    </div>
-
-    <div class="about-box">
-        <h1>Back End</h1>
-        <h2>php, mySQL, SQL</h2>
-    </div>
-
-    <div class="about-box">
-        <h1>Programming languages</h1>
-        <h2>Java, Python, Lua, C, C#</h2>
-    </div>
-
-    <div class="about-box">
-        <h1>Others</h1>
-        <h2>Android Studio, Arduino, Godot, GDScript</h2>
-    </div>
 
 </body>
+
+<script>
+    let currentLang = "en";
+
+    function toggleLanguage() {
+      currentLang = currentLang === "en" ? "it" : "en";
+      const elements = document.querySelectorAll("[data-en]");
+
+      elements.forEach(el => {
+        el.textContent = el.getAttribute(`data-${currentLang}`);
+      });
+
+      // Update button label
+      document.querySelector(".lang-btn").textContent = currentLang === "en" ? "English" : "Italiano";
+    }
+  </script>
+
 </html>

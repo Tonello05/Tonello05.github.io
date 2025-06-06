@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuele Tonello</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mkm2czt.css">
+    <style>
+        html, body {
+            overflow: scroll; /* disables scrolling */
+            height: 100%;     /* ensures full height */
+            margin: 0;
+            overflow: scroll;
+            scrollbar-color: rgb(37, 37, 37) rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="img/bg.mp4" type="video/mp4">
+    </video>
+
+    <button class="lang-btn" onclick="toggleLanguage()">English</button>
+    <a class="home-button" href="index.html">HOME</a>
+
+        <a href="https://github.com/Tonello05/Mixfinity" target="_blank" class="work">
+            <img src="img/works/mixfinity/multi-device-clay-mockup-16.jpg" alt="">
+            <div class="work-txt">
+                <h1>
+                    MIXFINITY
+                </h1>
+                <p data-en="A music based social" data-it="Un social basato sulla musica">
+                    A music based social
+                </p>
+                <p>
+                    <br><br>Html, Css, Javascript, PHP, SQL
+                </p>
+                <p>
+                    Web Design, UI/UX Design
+                </p>
+            </div>
+        </a>
+
+
+        <a href="europa.html" class="work">
+            <img src="img/works/europa/Europa banner.jpg" alt="">
+            <div class="work-txt">
+                <h1>
+                    EUROPA EUROPA
+                </h1>
+                <p data-en="Brand identity for a music festival" data-it="Brand identity per un festival musicale">
+                    Brand identity for a music festival
+                </p>
+                <p>
+                    <br><br>Brand identity, visual design
+                </p>
+            </div>
+        </a>
+
+        <a href="https://github.com/Tonello05/JavaAdventure"  target="_blank" class="work">
+            <img src="img/works/Java adventure/mockup-j-adventure.jpg" alt="">
+            <div class="work-txt">
+                <h1>
+                    JAVA ADVENTURE
+                </h1>
+                <p data-en="Simple videogame made in Java" data-it="Un semplice videogioco realizzato con Java">
+                    Simple videogame made in Java
+                </p>
+                <p>
+                    <br><br>Java, Swing
+                </p>
+                <p>
+                    Game Design, UI/UX Design
+                </p>
+            </div>
+        </a>
+
+        <a href="quailcast.html" class="work">
+            <img src="img/works/quailcast/quailcast.png" alt="">
+            <div class="work-txt">
+                <h1>
+                    MAXIMUM QUAILCAST
+                </h1>
+                <p data-en="Visual indentity for a podscast" data-it="Identità visiva per un podcast">
+                    Visual indentity for a podscast
+                </p>
+                <p>
+                    <br><br>Brand identity, visual design
+                </p>
+            </div>
+        </a>
+
+</body>
+
+<script>
+    let currentLang = "en";
+
+    function toggleLanguage() {
+      currentLang = currentLang === "en" ? "it" : "en";
+      const elements = document.querySelectorAll("[data-en]");
+
+      elements.forEach(el => {
+        el.textContent = el.getAttribute(`data-${currentLang}`);
+      });
+
+      // Update button label
+      document.querySelector(".lang-btn").textContent = currentLang === "en" ? "English" : "Italiano";
+    }
+  </script>
+
+</html>

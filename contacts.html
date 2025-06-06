@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuele Tonello</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mkm2czt.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="img/bg.mp4" type="video/mp4">
+    </video>
+
+    <button class="lang-btn" onclick="toggleLanguage()">English</button>
+    <a class="home-button" href="index.html">HOME</a>
+
+    <div class="title">
+        <h1 data-en="CONTACTS" data-it="CONTATTI">
+            CONTACTS
+        </h1>
+    </div>
+
+    <div class="contacts">
+        <div class="menu">
+            <a href="https://www.linkedin.com/in/samuele-tonello"  target="_blank">LINKEDIN</a> <br>
+            <a href="https://github.com/Tonello05" target="_blank" >GITHUB</a> <br>
+            <a href="https://t.me/To0nny" target="_blank">TELEGRAM</a> <br>
+            <a href="mailto:samueletonello05@gmail.com" >MAIL</a> <br>
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+    let currentLang = "en";
+
+    function toggleLanguage() {
+      currentLang = currentLang === "en" ? "it" : "en";
+      const elements = document.querySelectorAll("[data-en]");
+
+      elements.forEach(el => {
+        el.textContent = el.getAttribute(`data-${currentLang}`);
+      });
+
+      // Update button label
+      document.querySelector(".lang-btn").textContent = currentLang === "en" ? "English" : "Italiano";
+    }
+  </script>
+
+</html>

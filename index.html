@@ -3,44 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
     <title>Samuele Tonello</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mkm2czt.css">
 </head>
+
 <body>
+    <video autoplay muted loop id="myVideo">
+        <source src="img/bg.mp4" type="video/mp4">
+    </video>
 
-    <div class="navbar">
-        <div class="left-img">
-            <a href="https://www.linkedin.com/in/samuele-tonello/" target="_blank">
-                <img src="img/linkedin.png" alt="LinkedIn" class="linkedin">
-            </a>
-            <a href="mailto:samueletonello05@gmail.com">
-                <img src="img/email.png" alt="Email" class="email">
-            </a>
+    <button class="lang-btn" onclick="toggleLanguage()">English</button>
+
+    <div class="bottom-left">
+        <div class="name">
+            <h1>SAMUELE TONELLO</h1>
+            <h2 data-en="GRAPHIC DESIGNER & DEVELOPER" data-it="GRAPHIC DESIGNER & PROGRAMMATORE">GRAPHIC DESIGNER & DEVELOPER</h2>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/samuele-tonello" target="_blank"><img src="img/linkedin.png" alt="Image 1"></a>
+            <a href="https://github.com/Tonello05" target="_blank"><img src="img/github.png" alt="Image 2"></a>
+            <a href="https://t.me/To0nny" target="_blank"><img src="img/telegram.png" alt="Image 3"></a>
+            <a href="mailto:samueletonello05@gmail.com"><img src="img/mail.png" alt="Image 4"></a>
+        </div>
+    </div >
+
+    <div class="bottom-right">
+        <div class="menu">
+            <a href="works.html" data-en="- Projects" data-it="- Lavori">- Projects</a> <br>
+            <a href="skills.html" data-en="- Skills" data-it="- Competenze">- Skills</a> <br>
+            <a href="about.html" data-en="- About" data-it="- Chi sono">- About</a> <br>
+            <a href="contacts.html" data-en="- Contacts" data-it="- Contatti">- Contacts</a> <br>
         </div>
 
-        <p>Samuele <br>Tonello</p>
-
-        <div class="right-img">
-            <a href="https://t.me/To0nny" target="_blank">
-                <img src="img/telegram.png" alt="Telegram" class="telegram">
-            </a>
-            <a href="https://github.com/Tonello05" target="_blank">
-                <img src="img/github.png" alt="GitHub" class="github">
-            </a>
-        </div>
     </div>
-
-    <div class="title">
-        <h1>Samuele <br>Tonello</h1>
-        <h2>Developer & Designer</h2>
-    </div>
-
-    <div class="buttons">
-        <a href="about.html"><button>About</button></a>
-        <a href="projects.html"><button>Projects</button></a>
-        <a href="skills.html"><button>Skills</button></a>
-    </div>
-
 
 </body>
+
+<script>
+    let currentLang = "en";
+
+    function toggleLanguage() {
+      currentLang = currentLang === "en" ? "it" : "en";
+      const elements = document.querySelectorAll("[data-en]");
+
+      elements.forEach(el => {
+        el.textContent = el.getAttribute(`data-${currentLang}`);
+      });
+
+      // Update button label
+      document.querySelector(".lang-btn").textContent = currentLang === "en" ? "English" : "Italiano";
+    }
+  </script>
+
 </html>

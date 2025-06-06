@@ -1,0 +1,379 @@
+html, body {
+    overflow: hidden; /* disables scrolling */
+    height: 100%;     /* ensures full height */
+    margin: 0;
+  }
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.name h1{
+    color: white;
+    font-size: 4vw;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+.name h2{
+    margin-top: 0;
+    color: white;
+    font-size: 2vw;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.bottom-left {
+    position: fixed;
+    bottom: 0;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.social {
+    display: flex;
+    justify-content: left; /* center horizontally */
+    align-items: center;     /* align at same height */
+    gap: 20px;               /* space between images */
+    margin: 20px;
+    margin-left: 0;
+}
+
+.social a img {
+    width: 4vw;      /* set fixed width */
+    height: 4vw;     /* set fixed height */
+    object-fit: cover; /* crop to fit nicely */
+    border-radius: 8px; /* optional styling */
+    transition: transform 0.3s;
+}
+
+.menu a{
+    margin-top: 0;
+    color: white;
+    font-size: 2.5vw;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.bottom-right {
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.lang-btn{
+    position: fixed;
+    font-size: 1vw;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 1%;
+    border-radius:3vw;
+    margin: 2%;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.home-button{
+    position: fixed;
+    right: 0;
+    font-size: 1vw;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 1%;
+    border-radius:3vw;
+    margin: 2%;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.title{
+    margin: 2%;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.title h1{
+    margin-top: 5%;
+    color: white;
+    font-size: 15vw;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+.title h2{
+    margin-top: 0;
+    color: white;
+    font-size: 4vw;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+.paragraph{
+    margin: 2%;
+    color: white;
+    font-size: 2vw;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.paragraph p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.justified{
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
+.right-aligned{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.left-aligned{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.contacts{
+    position: fixed;
+    bottom: 0;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+
+.title-skill{
+    margin: 2%;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+.title-skill h1{
+        margin-top: 0;
+    color: white;
+    font-size: 10vw;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+.skill{
+    margin: 2%;
+    margin-top: 0;
+    display: flex;
+}
+
+.skill-section{
+    border-right: white solid 0.25vw;
+    border-left: white solid 0.25vw;
+    flex: 1; /* makes all boxes grow equally */
+}
+
+.skill h3{
+    color: white;
+    font-size: 2vw;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 0;
+    text-align: center;
+}
+
+.skill-item-lang {
+        color: white;
+    font-size: 1.5vw;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 0;
+    text-align: center;
+    background-color: black;
+    margin: 2%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 2%;
+    border-radius: 3vw;
+}
+
+.skill-item {
+    justify-content: center;      /* center the whole group horizontally */
+    display: flex;
+    align-items: center; /* vertical alignment */
+    color: white;
+    font-size: 1.5vw;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 0;
+    text-align: center;
+    background-color: black;
+    margin: 2%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 3vw;
+}
+
+.skill-item img{
+    height: 3vw;
+    width: 3vw;
+    margin-right: 5%;
+}
+
+.work{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    background: black;
+    border-radius: 3vw;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-decoration: none;
+    margin-bottom: 2%;
+}
+
+.work-txt{
+    color: white;
+    margin-left: 5%;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+.work-txt h1{
+    font-size: 5vw;
+}
+
+.work-txt p{
+    font-size: 1.5vw;
+}
+
+.work img{
+    height: 35vw;
+    width: auto;
+    border-radius: 3vw;
+}
+
+iframe{
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 80vw;;
+    height: 45vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 3vw;
+}
+
+@media (max-width: 600px) {
+
+    .title{
+        margin-top: 10%;
+    }
+
+    .title-skill{
+        margin-top: 10%;
+    }
+
+    .name h1 {
+        font-size: 6vw; /* Adjusted for smaller screens */
+    }
+    .name h2 {
+        font-size: 3vw; /* Adjusted for smaller screens */
+    }
+    .social a img {
+        width: 8vw; /* Adjusted for smaller screens */
+        height: 8vw; /* Adjusted for smaller screens */
+    }
+    .menu a {
+        font-size: 6vw; /* Adjusted for smaller screens */
+    }
+    .lang-btn {
+        font-size: 4vw; /* Adjusted for smaller screens */
+        padding: 2%;
+    }
+    .home-button{
+        font-size: 4vw; /* Adjusted for smaller screens */
+        padding: 2%;
+    }
+    .paragraph{
+        font-size: 5vw;
+    }
+
+    .skill{
+        display: inline;
+    }
+
+    .skill-section{
+        margin-top: 10%;
+        margin-left: 3%;
+        margin-right: 2%;
+        border-width: 1vw;
+    }
+
+    .skill-item{
+        padding: 1%;
+        font-size: 3vw;
+    }
+
+    .skill-item-lang{
+        padding: 1%;
+        font-size: 3vw;
+    }
+
+    .skill h3{
+        font-size: 6vw;
+    }
+
+    .skill-item img{
+        height: 6vw;
+        width: 6vw;
+    }
+
+    iframe{
+        width: 90vw;
+        height: 160vw;
+        padding: 0;
+        margin: 5%;
+    }
+
+}
+

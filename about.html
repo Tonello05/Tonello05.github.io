@@ -3,51 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
     <title>Samuele Tonello</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mkm2czt.css">
 </head>
+
 <body>
+    <video autoplay muted loop id="myVideo">
+        <source src="img/bg.mp4" type="video/mp4">
+    </video>
 
-    <div class="navbar">
-        <div class="left-img">
-            <a href="https://www.linkedin.com/in/samuele-tonello/" target="_blank">
-                <img src="img/linkedin.png" alt="LinkedIn" class="linkedin">
-            </a>
-            <a href="mailto:samueletonello05@gmail.com">
-                <img src="img/email.png" alt="Email" class="email">
-            </a>
-        </div>
+    <button class="lang-btn" onclick="toggleLanguage()">English</button>
+    <a class="home-button" href="index.html">HOME</a>
 
-        <p>Samuele <br>Tonello</p>
-
-        <div class="right-img">
-            <a href="https://t.me/To0nny" target="_blank">
-                <img src="img/telegram.png" alt="Telegram" class="telegram">
-            </a>
-            <a href="https://github.com/Tonello05" target="_blank">
-                <img src="img/github.png" alt="GitHub" class="github">
-            </a>
-        </div>
+    <div class="title">
+        <h1 data-en="ABOUT" data-it="CHI SONO">
+            ABOUT
+        </h1>
     </div>
 
-    <a href="index.html" class="home-button"><button>Home</button></a>
-
-    <div class="about-box">
-        <h1>Samuele Tonello</h1>
-        <h2>Developer & Designer</h2>
-        <h3>Italy</h3>
+    <div class="paragraph">
+        <p class="right-aligned" data-en="I'm Samuele Tonello, an Italian graphic designer and developer" 
+            data-it="Sono Samuele Tonello, un graphic designer e sviluppatore">
+            I'm Samuele Tonello, an Italian graphic designer and developer
+        </p>
+        <p class="justified" data-en=" passionate about visual storytelling and clean,
+            intuitive design. I craft digital experiences that are both aesthetic and functional."
+            data-it="italiano appassionato 
+            di storytelling visivo e design pulito e intuitivo. ">
+            passionate about visual storytelling and clean,
+            intuitive design. I craft digital experiences that are both aesthetic and functional.
+        </p>
     </div>
-
-    <div class="about-box">
-        <h1>Languages</h1>
-        <h2>Italian - Native language</h2>
-        <h2>English - Fluent</h2>
-    </div>
-
-    <div class="about-box">
-        <h1>Education</h1>
-        <h2>High school leaving qualification in computer science</h2>
-    </div>
-
 </body>
+
+<script>
+    let currentLang = "en";
+
+    function toggleLanguage() {
+      currentLang = currentLang === "en" ? "it" : "en";
+      const elements = document.querySelectorAll("[data-en]");
+
+      elements.forEach(el => {
+        el.textContent = el.getAttribute(`data-${currentLang}`);
+      });
+
+      // Update button label
+      document.querySelector(".lang-btn").textContent = currentLang === "en" ? "English" : "Italiano";
+    }
+  </script>
+
 </html>

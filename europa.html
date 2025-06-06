@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuele Tonello</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mkm2czt.css">
+    <style>
+      html, body {
+          overflow-y: scroll; /* disables scrolling */
+          height: 100%;     /* ensures full height */
+          margin: 0;
+          scrollbar-color: rgb(37, 37, 37) rgb(0, 0, 0);
+      }
+  </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="img/bg.mp4" type="video/mp4">
+    </video>
+
+    <button class="lang-btn" onclick="toggleLanguage()">English</button>
+    <a class="home-button" href="index.html">HOME</a>
+
+    <div class="title">
+        <h1>
+          EUROPA EUROPA
+        </h1>
+        <h2>
+          Personal Project
+        </h2>
+    </div>
+
+<iframe  src="img/works/europa/Europa Europa.pdf"></iframe>
+
+</body>
+
+<script>
+    let currentLang = "en";
+
+    function toggleLanguage() {
+      currentLang = currentLang === "en" ? "it" : "en";
+      const elements = document.querySelectorAll("[data-en]");
+
+      elements.forEach(el => {
+        el.textContent = el.getAttribute(`data-${currentLang}`);
+      });
+
+      // Update button label
+      document.querySelector(".lang-btn").textContent = currentLang === "en" ? "English" : "Italiano";
+    }
+  </script>
+
+</html>
